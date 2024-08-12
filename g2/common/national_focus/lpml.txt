@@ -1,0 +1,25 @@
+focus_tree = {        
+      id = lpml_focus ##Пример germen_focus
+      
+       country = {
+		factor = 1 #0 = для всех стран, 1 = для одной
+	}
+	
+	default = no
+	reset_on_civilwar = no
+	focus = { 
+        id = Focus_Number_1 
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 3 #По горизонтали
+        y = 0 #По вертикали
+        cost = 70  
+        completrion_reward = { ##Когда фокус выпол.       
+            add_tech_bonus = { #Дать бонус
+                name = political_bonus ##На индустриальные технологии
+                bonus = 100 ##На 100
+                uses = 1 ##Использовать только 1 раз
+                category = political   
+	   }
+        }   
+    }
+}
